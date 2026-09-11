@@ -4,18 +4,155 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex – Portfolio</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 700px;
-           margin: 4rem auto; padding: 0 1rem; line-height: 1.6; }
-    a { color: #2563eb; }
-  </style>
+  <meta name="description" content="Portfolio von Alex – Informatik-Student. Projekte mit Rust, Unity und Java.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%2312111a'/><rect x='4' y='4' width='8' height='8' fill='%23f2a65a'/></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Alex</h1>
-  <p>Informatik-Student. Ich baue Dinge mit Rust, Unity und Java.</p>
-  <h2>Projekte</h2>
-  <ul>
-    <li><a href="#">Projekt 1</a> – kurze Beschreibung</li>
-  </ul>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Zur Startseite">
+        <span class="logo-mark" aria-hidden="true"></span>Alex
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav-links">
+          <li><a href="#projekte">Projekte</a></li>
+          <li><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow">Informatik-Student · Game &amp; Software Dev</p>
+        <h1>Hallo, ich bin <span class="nowrap">Alex<span class="cursor" aria-hidden="true"></span></span></h1>
+        <p class="lead">Ich baue Dinge mit Rust, Unity und Java – von Spielen bis zu Tools. Hier findest du eine Auswahl meiner bisherigen Projekte.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projekte">Projekte ansehen</a>
+          <a class="btn btn-ghost" href="https://github.com/L0stHope">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projekte" aria-labelledby="projekte-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">01</p>
+          <h2 id="projekte-title">Projekte</h2>
+        </div>
+
+        <!--
+          Projekt-Vorlage: Karte kopieren und anpassen.
+          Bild einfügen: den Platzhalter in .card-media durch
+          <img src="images/DATEI.png" alt="Beschreibung"> ersetzen.
+        -->
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-media">
+              <span class="card-media-label">Bild folgt</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">2026 · Team-Projekt</p>
+              <h3>Projekt 1</h3>
+              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
+              <ul class="tags" aria-label="Technologien">
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+              <div class="card-links">
+                <a href="#">Code</a>
+                <a href="#">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="card-media-label">Bild folgt</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">2025 · Solo-Projekt</p>
+              <h3>Projekt 2</h3>
+              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
+              <ul class="tags" aria-label="Technologien">
+                <li>Rust</li>
+              </ul>
+              <div class="card-links">
+                <a href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="card-media-label">Bild folgt</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">2025 · Uni-Projekt</p>
+              <h3>Projekt 3</h3>
+              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
+              <ul class="tags" aria-label="Technologien">
+                <li>Java</li>
+              </ul>
+              <div class="card-links">
+                <a href="#">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ueber-mich" aria-labelledby="ueber-mich-title">
+      <div class="container about">
+        <div class="section-head">
+          <p class="eyebrow">02</p>
+          <h2 id="ueber-mich-title">Über mich</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Ich studiere Informatik und interessiere mich besonders für Spieleentwicklung und performante Software. Ein paar Sätze darüber, was dich antreibt, woran du gerade arbeitest und wonach du suchst (Praktikum, Werkstudentenstelle, …).</p>
+          </div>
+          <dl class="skills">
+            <div>
+              <dt>Sprachen</dt>
+              <dd>Rust, Java, C#</dd>
+            </div>
+            <div>
+              <dt>Engines &amp; Tools</dt>
+              <dd>Unity, Git</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">03</p>
+          <h2 id="kontakt-title">Kontakt</h2>
+        </div>
+        <div class="contact-box">
+          <p>Lust auf ein gemeinsames Projekt oder eine Frage? Schreib mir gern.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/L0stHope">GitHub</a>
+            <!-- <a class="btn btn-ghost" href="mailto:DEINE@MAIL.DE">E-Mail</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Alex</p>
+    </div>
+  </footer>
 </body>
 </html>
