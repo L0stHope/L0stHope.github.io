@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alex – Portfolio</title>
-  <meta name="description" content="Portfolio von Alex – Informatik-Student. Projekte mit Rust, Unity und Java.">
+  <title>Alejandro Martinez Hernandez's Portfolio</title>
+  <meta name="description" content="Portfolio of Alejandro Martinez Hernandez, computer science student at HTW Berlin. Projects built with Unity, C# and Java.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%2312111a'/><rect x='4' y='4' width='8' height='8' fill='%23f2a65a'/></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="Zur Startseite">
-        <span class="logo-mark" aria-hidden="true"></span>Alex
+      <a class="logo" href="#top" aria-label="Back to top">
+        <span class="logo-mark" aria-hidden="true"></span>Alejandro Martinez Hernandez
       </a>
-      <nav aria-label="Hauptnavigation">
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#projekte">Projekte</a></li>
-          <li><a href="#ueber-mich">Über mich</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a class="btn btn-sm" href="https://github.com/L0stHope">GitHub</a></li>
         </ul>
       </nav>
     </div>
@@ -29,121 +28,181 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="container">
-        <p class="eyebrow">Informatik-Student · Game &amp; Software Dev</p>
-        <h1>Hallo, ich bin <span class="nowrap">Alex<span class="cursor" aria-hidden="true"></span></span></h1>
-        <p class="lead">Ich baue Dinge mit Rust, Unity und Java – von Spielen bis zu Tools. Hier findest du eine Auswahl meiner bisherigen Projekte.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projekte">Projekte ansehen</a>
-          <a class="btn btn-ghost" href="https://github.com/L0stHope">GitHub</a>
-        </div>
+        <h1>Hi, I'm Alex.</h1>
+        <p class="lead">I study computer science at HTW Berlin. I mostly write code in C# and Java, create 3D models in Maya and I'm always open to new things.</p>
+        <dl class="skills">
+          <div>
+            <dt>Languages</dt>
+            <dd>Java, C#, Python, JavaScript</dd>
+          </div>
+          <div>
+            <dt>Engines &amp; tools</dt>
+            <dd>Unity, Git, Node.js, LWJGL, Maya, Affinity, GIMP, Aseprite</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <section class="section" id="projekte" aria-labelledby="projekte-title">
+    <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">01</p>
-          <h2 id="projekte-title">Projekte</h2>
-        </div>
+        <h2 id="projects-title">Projects</h2>
 
-        <!--
-          Projekt-Vorlage: Karte kopieren und anpassen.
-          Bild einfügen: den Platzhalter in .card-media durch
-          <img src="images/DATEI.png" alt="Beschreibung"> ersetzen.
-        -->
-        <div class="project-grid">
-          <article class="card">
-            <div class="card-media">
-              <span class="card-media-label">Bild folgt</span>
+        <div class="project-list">
+          <article class="card card-featured" id="biotopia">
+            <div class="featured-media">
+              <a class="gallery-link" href="images/BioTopia.png">
+                <img src="images/BioTopia.png" width="1374" height="773"
+                     alt="BioTopia: low poly city on a floating island with apartment blocks, a red factory and water canals">
+              </a>
+              <ul class="gallery" aria-label="More screenshots">
+                <li>
+                  <a class="gallery-link" href="images/BioTopia2.png">
+                    <img src="images/BioTopia2.png" width="1213" height="758" loading="lazy"
+                         alt="High-rise menu: compartments for algae, halophytes, jellyfish and crickets, or conversion into a supermarket">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/BioTopia3.png">
+                    <img src="images/BioTopia3.png" width="1238" height="774" loading="lazy"
+                         alt="Factory menu: unlock dishes like Jelly Noodles and Medu Mayo and upgrade speed, efficiency and quantity">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/BioTopia4.png">
+                    <img src="images/BioTopia4.png" width="1374" height="773" loading="lazy"
+                         alt="Close-up of a purple research building with solar panels next to a water canal">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/BioTopia5.png">
+                    <img src="images/BioTopia5.png" width="1374" height="773" loading="lazy"
+                         alt="Start of a game: an almost empty city area at the edge of the island with a waterfall">
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="card-body">
-              <p class="card-meta">2026 · Team-Projekt</p>
-              <h3>Projekt 1</h3>
-              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
-              <ul class="tags" aria-label="Technologien">
-                <li>Unity</li>
+              <p class="card-topic">Game Development</p>
+              <p class="card-meta">Summer 2025 · Bachelor team project · HTW Berlin</p>
+              <h3>BioTopia</h3>
+              <p class="card-subtitle">Urban Bio Space Simulator, a serious game made in collaboration with food4future</p>
+              <p>Growing food the conventional way will get harder in the future, as land, trade and fresh water become scarce. BioTopia shows how a city can still feed itself using alternative sources such as macroalgae, halophytes, jellyfish aquaculture and cricket farming.</p>
+              <p>Players build compartments into the buildings of a growing city, turn the harvest into dishes like "Medu Mayo" in factories and keep the population fed. As the city grows, so does the available space.</p>
+              <p>Developed by a team of seven. Before the HTW Showtime exhibition, we presented the game to an expert audience at a food4future event.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Unity 6</li>
                 <li>C#</li>
+                <li>Serious Game</li>
               </ul>
               <div class="card-links">
-                <a href="#">Code</a>
-                <a href="#">Demo</a>
+                <a href="https://github.com/L0stHope/backup-biotopia">Code</a>
+                <a href="https://showtime.f4.htw-berlin.de/ss25/bachelor/b4-urban-bio-space-simulator/">Project page</a>
               </div>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-media">
-              <span class="card-media-label">Bild folgt</span>
+          <article class="card card-featured card-reverse" id="modeling">
+            <div class="featured-media">
+              <a class="gallery-link" href="images/Maya1.jpg">
+                <img src="images/Maya1.jpg" width="3840" height="2160" loading="lazy"
+                     alt="Render of a black acoustic guitar with a cutaway body hanging on a beige wall, next to a side table with a white lamp and a framed city skyline at sunset">
+              </a>
+              <ul class="gallery" aria-label="More renders of the guitar">
+                <li>
+                  <a class="gallery-link" href="images/Maya2.jpg">
+                    <img src="images/Maya2.jpg" width="3840" height="2160" loading="lazy"
+                         alt="Close-up of the guitar body with the soundhole, the wooden bridge and the cutaway edge, next to a black shelf">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/Maya3.jpg">
+                    <img src="images/Maya3.jpg" width="3840" height="2160" loading="lazy"
+                         alt="The neck seen straight on, with the headstock, the six tuners and the frets running down the fretboard">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/Maya4.jpg">
+                    <img src="images/Maya4.jpg" width="3840" height="2160" loading="lazy"
+                         alt="Angled close-up of the headstock with chrome tuning pegs and the black wall mount behind it">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/Maya5.jpg">
+                    <img src="images/Maya5.jpg" width="3840" height="2160" loading="lazy"
+                         alt="Detail shot of the fretboard showing the wood grain, the brass frets and the wound strings">
+                  </a>
+                </li>
+              </ul>
+              <ul class="model-strip" aria-label="Voxel character models">
+                <li>
+                  <a class="gallery-link" href="images/Project_Forest1.png">
+                    <img src="images/Project_Forest1.png" width="907" height="940" loading="lazy"
+                         alt="Voxel character with long brown hair and a green dress, shown in the Maya viewport with the wireframe visible">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/Project_Forest2.png">
+                    <img src="images/Project_Forest2.png" width="919" height="965" loading="lazy"
+                         alt="Voxel character in a dark red dress with a white top and rabbit ears, standing in front of a black block shape">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/Project_Forest3.png">
+                    <img src="images/Project_Forest3.png" width="676" height="984" loading="lazy"
+                         alt="Side view of a voxel character with brown hair, a dark vest over red sleeves and a bag on the hip">
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="card-body">
-              <p class="card-meta">2025 · Solo-Projekt</p>
-              <h3>Projekt 2</h3>
-              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
-              <ul class="tags" aria-label="Technologien">
-                <li>Rust</li>
+              <p class="card-topic card-topic-alt">3D Modeling</p>
+              <p class="card-meta">2025</p>
+              <h3>Maya Models</h3>
+              <p>These are 3D models I created in Autodesk Maya for different projects.</p>
+              <p>The first one is an acoustic guitar with a cutaway body that I modeled in Maya and rendered in a small room scene.</p>
+              <p>Next to render work I also model low poly characters in a voxel style for a game called "<a href="https://github.com/L0stHope/Project-Forest">Twilight Brew</a>" and are built box by box and colored per face.</p>
+              <ul class="tags" aria-label="Tools">
+                <li>Maya</li>
+                <li>Rendering</li>
+                <li>Voxel Art</li>
               </ul>
-              <div class="card-links">
-                <a href="#">Code</a>
-              </div>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-media">
-              <span class="card-media-label">Bild folgt</span>
+          <article class="card card-featured" id="first-game">
+            <div class="featured-media">
+              <a class="gallery-link" href="images/first_game.png">
+                <img src="images/first_game.png" width="2559" height="1439" loading="lazy"
+                     alt="Hand drawn stick figure with a sword in the air, with three bugs spread across a crumpled paper background, a score at the top left and a countdown at the top right">
+              </a>
+              <ul class="gallery gallery-pair" aria-label="More screenshots">
+                <li>
+                  <a class="gallery-link" href="images/first_game2.png">
+                    <img src="images/first_game2.png" width="2559" height="1439" loading="lazy"
+                         alt="The stick figure standing on a drawn platform while two bugs approach from the left">
+                  </a>
+                </li>
+                <li>
+                  <a class="gallery-link" href="images/first_game3.png">
+                    <img src="images/first_game3.png" width="2559" height="1439" loading="lazy"
+                         alt="The stick figure thrown upwards by a burst of impact lines, with the score at two and bugs waiting below">
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="card-body">
-              <p class="card-meta">2025 · Uni-Projekt</p>
-              <h3>Projekt 3</h3>
-              <p>Kurze Beschreibung: Worum geht es, was war deine Rolle und was hast du dabei gelernt?</p>
-              <ul class="tags" aria-label="Technologien">
-                <li>Java</li>
+              <p class="card-topic">Game Development</p>
+              <h3>My First Game</h3>
+              <p class="card-subtitle">A small 2D game drawn on paper</p>
+              <p>The first game I built on my own. Almost everything is hand-made using Unity and Aseprite. The goal of the game is to try to stay afloat as long as possible, hitting and bouncing off the flies and collecting points for each bounce.</p>
+              <p>I made it for a small game-jam hosted by my tutor in university.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Unity</li>
+                <li>2D</li>
+                <li>Aseprite</li>
               </ul>
-              <div class="card-links">
-                <a href="#">Code</a>
-              </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ueber-mich" aria-labelledby="ueber-mich-title">
-      <div class="container about">
-        <div class="section-head">
-          <p class="eyebrow">02</p>
-          <h2 id="ueber-mich-title">Über mich</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Ich studiere Informatik und interessiere mich besonders für Spieleentwicklung und performante Software. Ein paar Sätze darüber, was dich antreibt, woran du gerade arbeitest und wonach du suchst (Praktikum, Werkstudentenstelle, …).</p>
-          </div>
-          <dl class="skills">
-            <div>
-              <dt>Sprachen</dt>
-              <dd>Rust, Java, C#</dd>
-            </div>
-            <div>
-              <dt>Engines &amp; Tools</dt>
-              <dd>Unity, Git</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="kontakt" aria-labelledby="kontakt-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">03</p>
-          <h2 id="kontakt-title">Kontakt</h2>
-        </div>
-        <div class="contact-box">
-          <p>Lust auf ein gemeinsames Projekt oder eine Frage? Schreib mir gern.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/L0stHope">GitHub</a>
-            <!-- <a class="btn btn-ghost" href="mailto:DEINE@MAIL.DE">E-Mail</a> -->
-          </div>
         </div>
       </div>
     </section>
@@ -151,8 +210,38 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Alex</p>
+      <p>© 2026 Alejandro Martinez Hernandez</p>
     </div>
   </footer>
+
+  <dialog class="lightbox" aria-label="Image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close">✕</button>
+    <img alt="">
+  </dialog>
+
+  <script>
+    // Open screenshots in a dialog; without JS the links simply open the image.
+    // The alt text travels with the image, but is not shown as a caption.
+    const lightbox = document.querySelector(".lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+
+    document.querySelectorAll(".gallery-link").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const thumb = link.querySelector("img");
+        const ratio = (thumb.naturalWidth || thumb.getAttribute("width")) /
+                      (thumb.naturalHeight || thumb.getAttribute("height"));
+        lightbox.style.setProperty("--ratio", ratio);
+        lightboxImg.src = link.href;
+        lightboxImg.alt = thumb.alt;
+        lightbox.showModal();
+      });
+    });
+
+    lightbox.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+  </script>
 </body>
 </html>
